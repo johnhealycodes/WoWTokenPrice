@@ -21,3 +21,26 @@ body{
 .token{
     height: 75px;
 }
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    border: black 2px solid;
+    border-radius: 25px;
+    width: 40%;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+
+.flag{
+    width: 40%;
+}
