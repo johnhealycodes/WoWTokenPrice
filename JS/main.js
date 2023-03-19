@@ -1,11 +1,8 @@
 //This is US client
 
-fetch(`https://us.api.blizzard.com/data/wow/token/index?namespace=dynamic-us&locale=en_US&access_token=USVK27cOuge3SyzzzFuIsHEEioQd3MvjCX
-`)
+fetch(`https://us.api.blizzard.com/data/wow/token/index?namespace=dynamic-us&locale=en_US&access_token=USY289qZjBTiuZSNWz8TfayIMcmsoiHIZ0`)
     .then(res => res.json())
     .then(data => {
-        console.log(data)
-        // let token = data.price / 10000
         document.querySelector('.US').innerText = data.price / 10000
         document.querySelector('.usAPILink').innerText = data._links.self.href
     })
@@ -16,11 +13,9 @@ fetch(`https://us.api.blizzard.com/data/wow/token/index?namespace=dynamic-us&loc
 
 //This is EU Client
 
-fetch(`https://eu.api.blizzard.com/data/wow/token/index?namespace=dynamic-eu&locale=eu_US&access_token=USVK27cOuge3SyzzzFuIsHEEioQd3MvjCX`)
+fetch(`https://eu.api.blizzard.com/data/wow/token/index?namespace=dynamic-eu&locale=en_EU&access_token=USY289qZjBTiuZSNWz8TfayIMcmsoiHIZ0`)
 .then(res => res.json())
 .then(data => {
-    console.log(data)
-    let token = data.price / 10000
     document.querySelector('.EU').innerText = data.price / 10000
     document.querySelector('.euAPILink').innerText = data._links.self.href
 })
