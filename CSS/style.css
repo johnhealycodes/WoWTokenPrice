@@ -47,6 +47,25 @@ section{
     width: 40%;
 }
 
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+a{
+    color:white;
+    transition: 1000ms;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    transition: 1000ms;
+}
+
 
 /* #smallHeader{
     font-size: large;
